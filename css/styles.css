@@ -1,0 +1,15 @@
+/* Center everything on the page */
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+/* Style line so it spans only the gamebaord */
+hr {
+    width: 50vw;
+}
+
+/* Style the errors indicator */
+#errors {
+    color: rgb(202, 12, 15);
+}

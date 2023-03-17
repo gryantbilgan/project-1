@@ -43,6 +43,7 @@ You are a captain. You have 81 soldiers under your command compiled of 9 differe
 * If number of mistakes reached then game over
 * Place conditions on the gameboard
 * - must have numbers 1-9 in each box, row, and column with no repeat numbers
+* - if condition met then game won
 
 
 
