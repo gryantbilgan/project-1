@@ -32,16 +32,21 @@ You are a captain. You have 81 soldiers under your command compiled of 9 differe
 * Creat a grid layout as the stage of a battlefield
 * Randomly generate a limited set of soldiers to the grid for each new game
 * Assign numbers to each class of soldier so the "captain" knows who and what they are placing on the battlefield
-* Generate a graphic for each class for user experience
+* Generate a graphic for each class for user experience at the bottom of "battlefield"
 * Generate a "Battle Cry" when board is full and configured correctly so the user knows that they've accomlished the goal
+* Generate a "Defeat" when number of errors are used
+* Designate a number of errors
+* Allow for clearing the board when "defeat" comes up
 * Allow for clearing of the board if user wants to restart if not completed
-* Clear the board when user has achieved correct "battle formation"
+* Clear the board when user has achieved correct "Battle cry"
+
 
 
 # Stretch
 * Generate sound effects for each class of soldier when placed on the field
 * Generate graphics for user experience so simulate battle simulation
 * When the game is won and the field is clearing, simulate "soldiers" marching off the field into battle
+* Add a time limit
 
 
 # Potential Roadblocks
