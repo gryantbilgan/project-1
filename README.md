@@ -29,6 +29,25 @@ You are a captain. You have 81 soldiers under your command compiled of 9 differe
 
 
 # MVP
+* Create a 9 x 9 grid - 81 sqaures, 9 boxes
+* - 3 x 3 boxes with 9 squares in each box of grid
+* - 9 columns of 9 squares in the grid
+* - 9 rows of 9 squares in the grid
+* Place numbers 1-9 below gameboard for user selection
+* Place button for switching to notes
+* Place button for erase
+* Place button for new game
+* Allow for interacrtive event for each square to place numbers and notes
+* Allow for interactive events to choose number that you wish to place in the square
+* Establish a number of allowable mistakes - 3
+* If number of mistakes reached then game over
+* Place conditions on the gameboard
+* - must have numbers 1-9 in each box, row, and column with no repeat numbers
+
+
+
+
+# Stretch
 * Creat a grid layout as the stage of a battlefield
 * Randomly generate a limited set of soldiers to the grid for each new game
 * Assign numbers to each class of soldier so the "captain" knows who and what they are placing on the battlefield
@@ -39,10 +58,6 @@ You are a captain. You have 81 soldiers under your command compiled of 9 differe
 * Allow for clearing the board when "defeat" comes up
 * Allow for clearing of the board if user wants to restart if not completed
 * Clear the board when user has achieved correct "Battle cry"
-
-
-
-# Stretch
 * Generate sound effects for each class of soldier when placed on the field
 * Generate graphics for user experience so simulate battle simulation
 * When the game is won and the field is clearing, simulate "soldiers" marching off the field into battle
