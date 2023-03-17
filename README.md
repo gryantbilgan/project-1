@@ -1,5 +1,8 @@
 # Kung Fu Doku(sudoku)
-## my sick p1
+(or Wushu Doku, not sure yet)
+
+
+## My Sick P1
 
 ### Ideas
 * 1.nine different warriors
@@ -22,7 +25,7 @@ Use DOM manipulation to style and generate battlefield game
 # Battlefield (Instructions)
 You are a captain. You have 81 soldiers under your command compiled of 9 different classes. You must place your soldiers strategically on the battlefield within grids, columns, and rows. To avoid redundancy and battlefield clutter, and also not hurt your soldier's egos, you must not place the same class of soldier within the same grid, column, or row. Once all your soldiers are dispersed into every square of the battlefield, and the previous ultimatum is met, you will be prepared for battle. Prove your competency and grit to lead your soldiers to victory by creating the perfect alignment. No battle is always the same, so be prepared to solve a new formation after completing delegation. "Do everything you ask of those you command." -George Patton
 
-![Wireframe](https://drive.google.com/file/d/17iaFvG7rkJ-2d1SPzYCOkPBT9ZFxNwmV/view?usp=sharing.jpg)
+![Alt sudoku text](img/Screenshot%202023-03-17%20at%209.28.38%20AM.png)
 
 
 # MVP
