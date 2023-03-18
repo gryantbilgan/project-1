@@ -11,5 +11,51 @@ hr {
 
 /* Style the errors indicator */
 #errors {
-    color: rgb(202, 12, 15);
+    color: rgb(199, 50, 43);
 }
+
+/* Style the gameboard:
+ - size needs to be divisible by 9
+ - centered on page
+ - displayed using flex
+ */
+#gameboard {
+    width: 630px;
+    height: 630px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color:rgb(247, 202, 151);
+}
+
+/* Style the squares:
+- establish a "square" class
+- sized as quotient from the gameboard size with enough room for border
+- size the text of the number and make it stand out
+- center using flex, horizontally and vertically */
+.square {
+    width: 66px;
+    height: 66px;
+    border: 2px solid lightblue;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the numbers:
+- same width as the gameboard
+- height set to size of square
+- centered in relation to gameboard */
+#digits {
+    width: 630px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: blue;
+}
+
