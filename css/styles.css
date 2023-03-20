@@ -62,9 +62,10 @@ hr {
 /* Style the numbers as they're placed in the squares
 - use the same styling as the squares */
 .number {
-    width: 66px;
-    height: 66px;
+    width: 58px;
+    height: 58px;
     border: 2px solid darkblue;
+    margin: 4px;
     font-size: 30px;
     font-weight: bold;
     display: flex;
