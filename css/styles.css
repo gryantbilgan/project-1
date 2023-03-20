@@ -25,8 +25,6 @@ hr {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-
-    background-color:rgb(247, 202, 151);
 }
 
 /* Style the squares of the gameboard:
@@ -55,20 +53,36 @@ hr {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-
-    background-color: tan;
 }
 
 /* Style the numbers as they're placed in the squares
 - use the same styling as the squares */
 .number {
-    width: 58px;
-    height: 58px;
-    border: 2px solid darkblue;
+    width: 56px;
+    height: 56px;
+    border: 3px solid darkblue;
     margin: 4px;
     font-size: 30px;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Show user which number is slected */
+.number-selected {
+    background-color: lightcyan;
+}
+
+/* Display which tiles have numbers already */
+.tile-start {
+    background-color: lavender;
+}
+
+/* Add border around squares */
+.horizontal-line {
+    border-bottom: 2px solid purple;
+}
+.vertical-line {
+    border-right: 2px solid purple;
 }
