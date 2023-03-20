@@ -68,11 +68,37 @@ hr {
     justify-content: center;
     align-items: center;
 }
-
 /* Show user which number is slected */
 .number-selected {
+    background-color: lightsteelblue;
+}
+
+/* Style the notes bar same as digits */
+#scribbles {
+    width: 630px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Style the notes */
+.notes {
+    width: 56px;
+    height: 56px;
+    border: 3px solid rgba(0, 85, 104, 0.412);
+    margin: 4px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Show user which note is selected */
+.note-selected{
     background-color: lightcyan;
 }
+
 
 /* Display which tiles have numbers already */
 .tile-start {

@@ -2,6 +2,7 @@
 // Establish indexes for each tile
 var numSelected = null;
 var tileSelected = null;
+var noteSelected = null;
 
 // Error counter
 var errors = 0;
@@ -43,14 +44,23 @@ window.onload = function() {
 // Use for loop for "digits 1-9" and to iterate in html
 // Display the numbers
 // Add number class and style
+// Add note class and style
 function setGame() {
     for (let i = 1; i <= 9; i++) {
         let number = document.createElement("div");
-        number.id = i
+        number.id = i;
         number.innerText = i;
         number.addEventListener("click", selectNumber);
         number.classList.add("number");
         document.getElementById("digits").appendChild(number);
+    }
+    for (let j = 1; j <= 9; j++) {
+        let notes = document.createElement("div");
+        notes.id = j
+        notes.innerText = j;
+        notes.addEventListener("click", selectNote);
+        notes.classList.add("notes");
+        document.getElementById("scribbles").appendChild(notes);
     }
    
     // Gameboard 9x9
@@ -98,6 +108,13 @@ function selectNumber() {
     }
     numSelected = this;
     numSelected.classList.add("number-selected");
+}
+function selectNote() {
+    if (noteSelected != null) {
+        noteSelected.classList.remove("note-selected");
+    }
+    noteSelected = this;
+    noteSelected.classList.add("note-selected");
 }
 
 // Add function for select tile and add number
