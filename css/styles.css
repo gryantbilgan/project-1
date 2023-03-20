@@ -29,12 +29,12 @@ hr {
     background-color:rgb(247, 202, 151);
 }
 
-/* Style the squares:
+/* Style the squares of the gameboard:
 - establish a "square" class
 - sized as quotient from the gameboard size with enough room for border
 - size the text of the number and make it stand out
 - center using flex, horizontally and vertically */
-.square {
+.tile {
     width: 66px;
     height: 66px;
     border: 2px solid lightblue;
@@ -45,7 +45,7 @@ hr {
     align-items: center;
 }
 
-/* Style the numbers:
+/* Style the numbers bar to pick from:
 - same width as the gameboard
 - height set to size of square
 - centered in relation to gameboard */
@@ -56,6 +56,18 @@ hr {
     display: flex;
     flex-wrap: wrap;
 
-    background-color: blue;
+    background-color: tan;
 }
 
+/* Style the numbers as they're placed in the squares
+- use the same styling as the squares */
+.number {
+    width: 66px;
+    height: 66px;
+    border: 2px solid darkblue;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
