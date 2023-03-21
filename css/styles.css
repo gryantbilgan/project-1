@@ -14,6 +14,10 @@ hr {
     color: rgb(199, 50, 43);
 }
 
+#resetButton {
+    margin-bottom: 10px;
+}
+
 /* Style the gameboard:
  - size needs to be divisible by 9
  - centered on page

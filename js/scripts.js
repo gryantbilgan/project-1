@@ -3,6 +3,7 @@
 var numSelected = null;
 var tileSelected = null;
 var noteSelected = null;
+var gameIsActive = true;
 
 // Error counter
 var errors = 0;
@@ -39,6 +40,35 @@ window.onload = function() {
     setGame();
 }
 
+
+const resetButton = document.querySelector("#resetButton")
+
+
+const handleResetButtonClick = function () {
+    console.log("new game turkey!");
+    gameboard = [
+        "--2-8--6-",
+        "-56917-3-",
+        "-4--5-871",
+        "-9----6--",
+        "671-952--",
+        "----2-1--",
+        "167-3-59-",
+        "48--7-3--",
+        "-2546----"
+    ];
+    numSelected = null;
+    tileSelected = null;
+    noteSelected = null;
+    gameIsActive = true;
+    const gameboardDiv = document.getElementById("gameboard")
+    while (gameboardDiv.firstChild) {
+        gameboardDiv.removeChild(gameboardDiv.firstChild)
+    }
+    setGame()
+}
+
+
 // Game function
 // Create a div tag <div id="1" class="number">1</div>
 // Use for loop for "digits 1-9" and to iterate in html
@@ -54,14 +84,14 @@ function setGame() {
         number.classList.add("number");
         document.getElementById("digits").appendChild(number);
     }
-    for (let j = 1; j <= 9; j++) {
-        let notes = document.createElement("div");
-        notes.id = j
-        notes.innerText = j;
-        notes.addEventListener("click", selectNote);
-        notes.classList.add("notes");
-        document.getElementById("scribbles").appendChild(notes);
-    }
+    // for (let j = 1; j <= 9; j++) {
+    //     let notes = document.createElement("div");
+    //     notes.id = j
+    //     notes.innerText = j;
+    //     notes.addEventListener("click", selectNote);
+    //     notes.classList.add("notes");
+    //     document.getElementById("scribbles").appendChild(notes);
+    // }
    
     // Gameboard 9x9
     // Gameboard index = r - c
@@ -79,7 +109,7 @@ function setGame() {
     for (let r = 0; r < 9; r++) {
         for (let c = 0; c < 9; c++) {
             let tile = document.createElement("div");
-            tile.id = r.toString() + "-" + c.toString
+            tile.id = r.toString() + "-" + c.toString()
             if (gameboard[r][c] != "-") {
                 tile.innerText = gameboard[r][c];
                 tile.classList.add("tile-start");
@@ -109,13 +139,13 @@ function selectNumber() {
     numSelected = this;
     numSelected.classList.add("number-selected");
 }
-function selectNote() {
-    if (noteSelected != null) {
-        noteSelected.classList.remove("note-selected");
-    }
-    noteSelected = this;
-    noteSelected.classList.add("note-selected");
-}
+// function selectNote() {
+//     if (noteSelected != null) {
+//         noteSelected.classList.remove("note-selected");
+//     }
+//     noteSelected = this;
+//     noteSelected.classList.add("note-selected");
+// }
 
 // Add function for select tile and add number
 // When clicking on tile make sure number selected first
@@ -132,6 +162,7 @@ function selectTile() {
         let coords = this.id.split("-");
         let r = parseInt(coords[0]);
         let c = parseInt(coords[1]);
+        console.log(r,c, numSelected.id, coords, this.id)
 
         if(solution[r][c] == numSelected.id) {
             this.innerText = numSelected.id;
@@ -141,3 +172,6 @@ function selectTile() {
         }
     }
 }
+
+// Reset button event listener
+resetButton.addEventListener("click", handleResetButtonClick)
