@@ -64,7 +64,11 @@ const handleResetButtonClick = function () {
     const gameboardDiv = document.getElementById("gameboard")
     while (gameboardDiv.firstChild) {
         gameboardDiv.removeChild(gameboardDiv.firstChild)
-    }
+    };
+    const digitsDiv = document.getElementById("digits")
+    while (digitsDiv.firstChild) {
+        digitsDiv.removeChild(digitsDiv.firstChild)
+    };
     setGame()
 }
 
