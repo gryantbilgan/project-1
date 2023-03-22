@@ -14,8 +14,17 @@ hr {
     color: rgb(199, 50, 43);
 }
 
+#Turkey {
+    color:rgb(235, 10, 152);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 #resetButton {
+    font-size: 15px;
     margin-bottom: 10px;
+    background-color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Style the gameboard:
@@ -111,8 +120,8 @@ hr {
 
 /* Add border around squares */
 .horizontal-line {
-    border-bottom: 2px solid purple;
+    border-bottom: 3px solid purple;
 }
 .vertical-line {
-    border-right: 2px solid purple;
+    border-right:2px solid purple;
 }

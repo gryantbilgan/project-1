@@ -4,6 +4,8 @@ var numSelected = null;
 var tileSelected = null;
 var noteSelected = null;
 var gameIsActive = true;
+var sudoPlayer = null;
+let counter = 0;
 
 // Error counter
 var errors = 0;
@@ -71,7 +73,6 @@ const handleResetButtonClick = function () {
     };
     setGame()
 }
-
 
 // Game function
 // Create a div tag <div id="1" class="number">1</div>
@@ -170,12 +171,19 @@ function selectTile() {
 
         if(solution[r][c] == numSelected.id) {
             this.innerText = numSelected.id;
+            counter++;
+            if (counter == 43) {
+            let congratz = document.createElement("div")
+            congratz.innerText = "Congratulations Turkey!"
+            document.getElementById("Turkey").appendChild(congratz)
+            }
         } else {
             errors += 1;
             document.getElementById("errors").innerText = errors;
         }
     }
 }
+
 
 // Reset button event listener
 resetButton.addEventListener("click", handleResetButtonClick)
